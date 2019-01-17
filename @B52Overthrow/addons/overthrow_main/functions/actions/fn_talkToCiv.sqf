@@ -26,9 +26,10 @@ private _canSellDrugs = true;
 private _canIntel = true;
 private _canMission = false;
 private _canTute = false;
+private _canSellVehicles = false;
 
 if !((_civ getvariable ["shop",[]]) isEqualTo []) then {_canSellDrugs = true;_canRecruit = false;_canBuy=true;_canSell=true};
-if (_civ getvariable ["carshop",false]) then {_canSellDrugs = true;_canRecruit = false;_canBuyVehicles=true};
+if (_civ getvariable ["carshop",false]) then {_canSellDrugs = true;_canRecruit = false;_canBuyVehicles=true;_canSellVehicles=true;};
 if (_civ getvariable ["harbor",false]) then {_canSellDrugs = true;_canRecruit = false;_canBuyBoats=true};
 if (_civ getvariable ["gundealer",false]) then {_canSellDrugs = false;_canRecruit = false;_canBuyGuns=true;_canIntel=false;_canTute =true};
 if (_civ getvariable ["employee",false]) then {_canSellDrugs = false;_canRecruit = false;_canBuyGuns=false;_canIntel=false};
@@ -289,7 +290,6 @@ if (_canBuyVehicles) then {
 	];
 };
 
-_canSellVehicles = true;
 if (_canSellVehicles) then {
 	_options pushBack [
 		"Sell Vehicles", OT_fnc_sellVehicleDialog

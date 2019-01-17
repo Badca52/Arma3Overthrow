@@ -19,15 +19,12 @@ profileNamespace setVariable ["OT_SellingVehicles", _items];
 			_name = "";
 			_pic = "";
 			_price = 0;
-
+			
 			if !(_type == "Set_HMG") then {
 				_price = [_town, _type, _standing] call OT_fnc_getPrice;
 			};
+			_price = _price / 2;
 
-			if("fuel depot" in (server getVariable "OT_NATOabandoned")) then {
-				_price = round(_price * 0.5);
-			};
-			
 			call {
 				if(_type == "Set_HMG") exitWith {
 					_p = (cost getVariable "I_HMG_01_high_weapon_F") select 0;
@@ -50,8 +47,6 @@ profileNamespace setVariable ["OT_SellingVehicles", _items];
 				_pic = _type call OT_fnc_vehicleGetPic;
 				_name = _type call OT_fnc_vehicleGetName;
 			};
-			// Price Fix
-			_price = _price * 0.5;
 			
 			_idx = lbAdd [1500, format["%1", _name]];
 			lbSetPicture [1500, _idx, _pic];
