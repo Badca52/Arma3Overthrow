@@ -346,7 +346,15 @@ if (_canSellDrugs) then {
 				_civ setVariable["OT_askedDrugs",true,true];
 
 
-				player globalchat ([format["Would you like to buy some %1?",_drugname],format["Wanna buy some %1?",_drugname],format["Hey, want some %1?",_drugname],format["You wanna buy some %1?",_drugname],format["Pssst! %1?",_drugname],format["Hey you looking for any %1?",_drugname]] call BIS_fnc_selectRandom);
+				player globalchat ([
+					format["Would you like to buy some %1?",_drugname],
+					format["Wanna buy some %1?",_drugname],
+					format["Hey, want some %1?",_drugname],
+					format["You wanna buy some %1?",_drugname],
+					format["Are you looking to buy some %1?",_drugname],
+					format["Best %1 around. Want some?",_drugname],
+					format["Pssst! %1?",_drugname],
+					format["Hey you looking for any %1?",_drugname]] call BIS_fnc_selectRandom);
 
 				if(side _civ == civilian) then {
 					_price = round(_price * 1.2);
