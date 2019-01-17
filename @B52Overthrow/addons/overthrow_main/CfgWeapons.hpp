@@ -129,6 +129,130 @@ class CfgWeapons {
 
 
 	//Craftable items
+    class Uniform_Base;
+    class ItemCore : Uniform_Base;
+    class U_I_GhillieSuit : ItemCore {
+        ot_craftable = 1;
+		ot_craftQuantity = 1;
+		ot_craftRecipe = "[[""Uniform_Base"",5]]"
+    };
+
+    class U_I_OfficerUniform : ItemCore {
+        ot_craftable = 1;
+		ot_craftQuantity = 1;
+		ot_craftRecipe = "[[""Uniform_Base"",2]]"
+    };
+    class U_I_CombatUniform_shortsleeve : ItemCore {
+        ot_craftable = 1;
+		ot_craftQuantity = 1;
+		ot_craftRecipe = "[[""Uniform_Base"",2]]"
+    };
+    class U_I_CombatUniform_tshirt : ItemCore {
+        ot_craftable = 1;
+		ot_craftQuantity = 1;
+		ot_craftRecipe = "[[""Uniform_Base"",2]]"
+    };
+    class U_I_CombatUniform : ItemCore {
+        ot_craftable = 1;
+		ot_craftQuantity = 1;
+		ot_craftRecipe = "[[""Uniform_Base"",2]]"
+    };
+    class U_OG_Guerilla1_1 : ItemCore {
+        ot_craftable = 1;
+		ot_craftQuantity = 1;
+		ot_craftRecipe = "[[""Uniform_Base"",2]]"
+    };
+    class U_OG_Guerilla2_1 : ItemCore {
+        ot_craftable = 1;
+		ot_craftQuantity = 1;
+		ot_craftRecipe = "[[""Uniform_Base"",2]]"
+    };
+    class U_OG_Guerilla2_2 : ItemCore {
+        ot_craftable = 1;
+		ot_craftQuantity = 1;
+		ot_craftRecipe = "[[""Uniform_Base"",2]]"
+    };
+    class U_OG_Guerilla2_3 : ItemCore {
+        ot_craftable = 1;
+		ot_craftQuantity = 1;
+		ot_craftRecipe = "[[""Uniform_Base"",2]]"
+    };
+    class U_OG_Guerilla3_1 : ItemCore {
+        ot_craftable = 1;
+		ot_craftQuantity = 1;
+		ot_craftRecipe = "[[""Uniform_Base"",2]]"
+    };
+    class U_OG_Guerilla3_2 : ItemCore {
+        ot_craftable = 1;
+		ot_craftQuantity = 1;
+		ot_craftRecipe = "[[""Uniform_Base"",2]]"
+    };
+    class U_OG_leader : ItemCore {
+        ot_craftable = 1;
+		ot_craftQuantity = 1;
+		ot_craftRecipe = "[[""Uniform_Base"",2]]"
+    };
+    class H_Shemag_olive : ItemCore {
+        ot_craftable = 1;
+		ot_craftQuantity = 1;
+		ot_craftRecipe = "[[""Uniform_Base"",2]]"
+    };
+
+    class V_BandollierB_rgr : ItemCore {
+        ot_craftable = 1;
+		ot_craftQuantity = 1;
+		ot_craftRecipe = "[[""Uniform_Base"",2]]"
+    };
+    class V_BandollierB_blk : ItemCore {
+        ot_craftable = 1;
+		ot_craftQuantity = 1;
+		ot_craftRecipe = "[[""Uniform_Base"",2]]"
+    };
+    class V_BandollierB_oli : ItemCore {
+        ot_craftable = 1;
+		ot_craftQuantity = 1;
+		ot_craftRecipe = "[[""Uniform_Base"",2]]"
+    };
+    class V_PlateCarrier1_rgr : ItemCore {
+        ot_craftable = 1;
+		ot_craftQuantity = 1;
+		ot_craftRecipe = "[[""Uniform_Base"",2],[""OT_Steel"",1]]"
+    };
+    class V_PlateCarrier2_rgr : ItemCore {
+        ot_craftable = 1;
+		ot_craftQuantity = 1;
+		ot_craftRecipe = "[[""Uniform_Base"",3],[""OT_Steel"",2]]"
+    };
+
+    class B_Carryall_Base;
+    class ItemCore : B_Carryall_Base;
+    class B_Carryall_ocamo : ItemCore {
+        ot_craftable = 1;
+		ot_craftQuantity = 1;
+		ot_craftRecipe = "[[""Uniform_Base"",4]]"
+    };
+    class B_Carryall_oucamo : ItemCore {
+        ot_craftable = 1;
+		ot_craftQuantity = 1;
+		ot_craftRecipe = "[[""Uniform_Base"",4]]"
+    };
+    class B_Carryall_mcamo : ItemCore {
+        ot_craftable = 1;
+		ot_craftQuantity = 1;
+		ot_craftRecipe = "[[""Uniform_Base"",4]]"
+    };
+    class B_Carryall_khk : ItemCore {
+        ot_craftable = 1;
+		ot_craftQuantity = 1;
+		ot_craftRecipe = "[[""Uniform_Base"",4]]"
+    };
+    class B_Carryall_cbr : ItemCore {
+        ot_craftable = 1;
+		ot_craftQuantity = 1;
+		ot_craftRecipe = "[[""Uniform_Base"",4]]"
+    };
+
+
 	class ACE_ItemCore;
 	class ACE_fieldDressing : ACE_ItemCore {
 		ot_craftable = 1;

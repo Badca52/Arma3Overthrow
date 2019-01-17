@@ -74,6 +74,15 @@ class CfgVehicles {
 		}
         class ACE_SelfActions {
             class ACE_Equipment {
+                class OT_Sleep
+                {
+                    displayName = "Sleep until 7 AM";
+                    condition = "count (nearestObjects [player, ['Land_Sleeping_bag_F','Land_Sleeping_bag_blue_F'], 8]) > 0";
+                    statement = "skipTime (7 - daytime + 24 ) % 24;";
+                    showDisabled = 0;
+                    exceptions[] = {};
+                    //icon = "overthrow_main\ui\icons\light_cig.paa";
+                };
                 class OT_StartSpliff
                 {
                     displayName = "Smoke a spliff";
@@ -111,6 +120,10 @@ class CfgVehicles {
 		}
 	};
 
+    //["Land_Sleeping_bag_F","Camping_base_F","NonStrategic","Building","Static","All"]
+    //class Tents;
+    //class Land_Sleeping_bag_F : Tents {
+    
 	class LandVehicle;
 	class Car : LandVehicle {
 		MACRO_SALVAGEWRECK
