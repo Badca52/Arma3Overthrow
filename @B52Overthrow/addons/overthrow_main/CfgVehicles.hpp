@@ -119,10 +119,6 @@ class CfgVehicles {
 			};
 		}
 	};
-
-    //["Land_Sleeping_bag_F","Camping_base_F","NonStrategic","Building","Static","All"]
-    //class Tents;
-    //class Land_Sleeping_bag_F : Tents {
     
 	class LandVehicle;
 	class Car : LandVehicle {
